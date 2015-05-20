@@ -1,0 +1,7 @@
+node_modules
+build
+app/_bower_components
+.sass-cache
+**/.DS_Store
+.DS_Store
+gulp/config-ftp.json
