@@ -3,7 +3,8 @@ var plumber      = require('gulp-plumber');
 var browsersync  = require('browser-sync');
 var sass         = require('gulp-ruby-sass');
 var gulpFilter   = require('gulp-filter');
-var autoprefixer = require('gulp-autoprefixer');
+var postcss      = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 var sourcemaps   = require('gulp-sourcemaps');
 var config       = require('../../config');
 
@@ -17,16 +18,16 @@ gulp.task('sass', function() {
   sassConfig.onError = browsersync.notify;
 
   // Don’t write sourcemaps of sourcemaps
-  var filter = gulpFilter(['*.css', '!*.map']);
+  var filter = gulpFilter(['*.css', '!*.map'], {restore: true});
 
   browsersync.notify('Compiling Sass');
 
   return sass(config.sass.src, sassConfig)
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(autoprefixer(config.autoprefixer))
+    .pipe(postcss([ autoprefixer(config.autoprefixer) ]))
     .pipe(filter) // Don’t write sourcemaps of sourcemaps
     .pipe(sourcemaps.write('.', { includeContent: false }))
-    .pipe(filter.restore()) // Restore original files
+    .pipe(filter.restore) // Restore original files
     .pipe(gulp.dest(config.sass.dest));
 });
