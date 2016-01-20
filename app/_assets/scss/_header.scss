@@ -1,0 +1,14 @@
+header {
+	position: fixed;
+	height: 100vh;
+	width: 33.33%;
+	background: #264DFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	.header_nav {
+		flex-grow: 1;
+	}
+
+}

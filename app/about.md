@@ -1,11 +1,8 @@
 ---
 layout: page
-title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Actuellement étudiante en Digital Media, je développe mes projets dans le but de me spécialiser en Design Interactif.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Toujours en vue de progresser et d'évoluer professionnellement, j'occupe le poste de Junior Art Director à Bonhomme en tant que stagiaire et je suis aussi disponible comme Interface Designer freelance.

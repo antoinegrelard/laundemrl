@@ -1,0 +1,27 @@
+main {
+	margin-left: 33.33%;
+}
+
+.projects_list {
+	padding: 5% 3%;
+	display: flex;
+	flex-direction: column;
+
+	li {
+	  background: #264DFF;
+	  width: 50%;
+	  height: 100px;
+	  list-style: none;
+	}
+
+	li:nth-child(even) {
+	  align-self: flex-end;
+	}
+
+	li:nth-child(4n+3),
+	li:nth-child(4n+2){
+	  width: 25%;
+	}
+
+}
+
