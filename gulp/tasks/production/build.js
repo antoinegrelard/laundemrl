@@ -8,6 +8,7 @@ gulp.task('build:production', function(callback) {
   runSequence('delete', 'jekyll:production',
   [
     'sass',
+    'fonts',
     'images',
     'scripts:libraries',
     'scripts'

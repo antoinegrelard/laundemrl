@@ -9,4 +9,5 @@ var config = require('../../config').watch;
    gulp.watch(config.sass,    ['sass', 'scsslint']);
    gulp.watch(config.scripts, ['scripts', 'scripts:libraries']);
    gulp.watch(config.images,  ['images']);
+   gulp.watch(config.fonts,  ['fonts']);
  });

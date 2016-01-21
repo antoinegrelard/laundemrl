@@ -83,6 +83,10 @@ module.exports = {
     src:  srcAssets + '/images/**/*',
     dest: developmentAssets + '/images'
   },
+  fonts: {
+    src:  srcAssets + '/fonts/*',
+    dest: developmentAssets + '/fonts'
+  },
   watch: {
     jekyll: [
       '_config.yml',
@@ -97,7 +101,8 @@ module.exports = {
     ],
     sass:    srcAssets + '/scss/**/*.{sass,scss}',
     scripts: srcAssets + '/js/**/*.js',
-    images:  srcAssets + '/images/**/*'
+    images:  srcAssets + '/images/**/*',
+    fonts:  srcAssets + '/fonts/*'
   },
   scsslint: {
     src: [
