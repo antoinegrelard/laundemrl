@@ -54,8 +54,6 @@ module.exports = {
   scripts: {
     libraries: {
       src: [
-        jsLibAssets + '/jquery/dist/jquery.js',
-        jsLibAssets + '/history.js/scripts/bundled-uncompressed/html4+html5/jquery.history.js'
       ],
       dest: developmentAssets + '/js/libs'
     },
