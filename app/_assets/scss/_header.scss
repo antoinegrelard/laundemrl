@@ -16,8 +16,9 @@ header {
 	h1 {
 		font-family: $font-playfair;
 		font-size: $font-xl;
+		font-weight: 300;
 
-		@include underline(25, true);
+		@include underline(25, $pink, $blue, true);
 
 		a {
 			text-decoration: none;

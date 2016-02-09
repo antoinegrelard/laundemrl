@@ -4,8 +4,11 @@ layout: default
 
 <ul class="projects_list">
 {% for project in site.projects %}
-  <li>
-    <h2>
+  <li class="projects_item">
+    <div class="background">
+      <img src="{{ project.image }}">
+    </div>
+    <h2 class="project_title">
       <a href="{{ project.url | prepend: site.url }}">{{ project.title }}</a>
     </h2>
   </li>

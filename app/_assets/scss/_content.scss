@@ -7,19 +7,61 @@ main {
 	display: flex;
 	flex-direction: column;
 
-	li {
-	  background: $blue;
+	.projects_item {
 	  width: 50%;
-	  height: 100px;
 	  list-style: none;
+	  position: relative;
+
+	  .background {
+	  	background: $blue;
+	  	width: 100%;
+	  	overflow: hidden;
+	  	padding-top: 56.25%;
+	  	position: relative;
+
+	  	img {
+	  		position: absolute;
+	  		top: 0;
+	  		left: 0;
+	  		width: 100%;
+	  	}
+
+	  	&:hover {
+
+	  		 img {
+	  			mix-blend-mode: multiply;
+	  		}
+
+	  	}
+
+	  }
+
+	  .project_title {
+	  	font-family: $font-source-black;
+	  	font-size: 30px;
+	  	line-height: 36px;
+	  	text-transform: uppercase;
+	  	position: absolute;
+	  	margin-top: -15px;
+	  	margin-left: 10px;
+
+	  	@include underline(5, $pink, $gray);
+
+	  	a {
+	  		text-decoration: none;
+	  		color: $blue;
+	  	}
+
+	  }
+
 	}
 
-	li:nth-child(even) {
+	.projects_item:nth-child(even) {
 	  align-self: flex-end;
 	}
 
-	li:nth-child(4n+3),
-	li:nth-child(4n+2){
+	.projects_item:nth-child(4n+3),
+	.projects_item:nth-child(4n+2){
 	  width: 25%;
 	}
 

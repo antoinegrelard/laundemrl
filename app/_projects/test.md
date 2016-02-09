@@ -1,5 +1,6 @@
 ---
 title: Test
+image: http://lab.laundemorel.fr/images/dmdm_2x.gif
 permalink: /test/
 ---
 

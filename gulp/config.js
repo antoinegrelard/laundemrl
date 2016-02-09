@@ -17,7 +17,7 @@ module.exports = {
       files: [
         developmentAssets + '/css/*.css',
         developmentAssets + '/js/*.js',
-        developmentAssets + '/images/**',
+        developmentAssets + '/imgs/**',
         developmentAssets + '/fonts/*'
       ]
     },
@@ -78,8 +78,8 @@ module.exports = {
     cascade: true
   },
   images: {
-    src:  srcAssets + '/images/**/*',
-    dest: developmentAssets + '/images'
+    src:  srcAssets + '/imgs/**/*',
+    dest: developmentAssets + '/imgs'
   },
   fonts: {
     src:  srcAssets + '/fonts/*',
@@ -99,7 +99,7 @@ module.exports = {
     ],
     sass:    srcAssets + '/scss/**/*.{sass,scss}',
     scripts: srcAssets + '/js/**/*.js',
-    images:  srcAssets + '/images/**/*',
+    images:  srcAssets + '/imgs/**/*',
     fonts:  srcAssets + '/fonts/*'
   },
   scsslint: {
@@ -140,7 +140,7 @@ module.exports = {
       assets: [
         productionAssets + '/css/*.css',
         productionAssets + '/js/*.js',
-        productionAssets + '/images/**/*'
+        productionAssets + '/imgs/**/*'
       ],
       base: production
     },

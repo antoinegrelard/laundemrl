@@ -1,10 +1,10 @@
-@mixin underline($m, $centered:false) {
+@mixin underline($m, $color1, $color2, $centered:false) {
   &:after {
     content: "";
     display: block;
     width: 30px;
     height: 3px;
-    background: linear-gradient(to right,$pink 20%,$blue );
+    background: linear-gradient(to right,$color1 20%,$color2 );
     @if $centered {
         margin: #{$m}px 0;
       } @else {
