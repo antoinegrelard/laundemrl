@@ -1,14 +1,14 @@
 main {
-	margin-left: 33.33%;
+	margin-left: 300px;
 }
 
 .projects_list {
-	padding: 5% 3%;
+	padding: 50px $gutter;
 	display: flex;
 	flex-direction: column;
 
 	li {
-	  background: #264DFF;
+	  background: $blue;
 	  width: 50%;
 	  height: 100px;
 	  list-style: none;
@@ -24,4 +24,3 @@ main {
 	}
 
 }
-

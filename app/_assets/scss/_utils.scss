@@ -1,3 +1,14 @@
-.page-link {
-	font-size: 2em;
+@mixin underline($m, $centered:false) {
+  &:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: linear-gradient(to right,$pink 20%,$blue );
+    @if $centered {
+        margin: #{$m}px 0;
+      } @else {
+        margin-top: #{$m}px;
+      }
+  }
 }

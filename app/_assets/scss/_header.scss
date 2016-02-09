@@ -2,17 +2,13 @@ header {
 	position: fixed;
 	height: 100vh;
 	width: 33.33%;
-	background: #264DFF;
+	max-width: 300px;
+	background: $blue;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	color: white;
-	padding: 50px 0;
-
-	[class^="header_"] {
-		margin-left: 30%;
-	}
-
+	padding: 50px $gutter;
 }
 
 .header_title {
@@ -20,6 +16,8 @@ header {
 	h1 {
 		font-family: $font-playfair;
 		font-size: $font-xl;
+
+		@include underline(25, true);
 
 		a {
 			text-decoration: none;
@@ -45,16 +43,23 @@ header {
 	font-size: $font-xs;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 1px;
+	padding-top: 100px;
 
 	.nav_list {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		justify-content: center;
 	}
 
 	.nav_item {
 		list-style: none;
+		margin-bottom: 35px;
 		
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		a {
 			position: relative;
 			padding-left: 20px;
@@ -76,6 +81,7 @@ header {
 
 		}
 
+		&.active,
 		&:hover {
 
 			a:before {
@@ -91,6 +97,7 @@ header {
 .social_list {
 	display: flex;
 	justify-content: space-between;
+	width: 80%;
 }
 
 .social_item {
