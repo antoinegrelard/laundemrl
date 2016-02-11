@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: lighten($blue, 40%);
+}
+
+::-moz-selection {
+  background: lighten($blue, 40%);
+}
+
 h1,
 h2,
 h3,

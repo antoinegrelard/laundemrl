@@ -13,25 +13,23 @@ main {
 	  position: relative;
 
 	  .background {
-	  	background: $blue;
+	  	background: $white;
 	  	width: 100%;
 	  	overflow: hidden;
 	  	padding-top: 56.25%;
 	  	position: relative;
+	  	transition: background .1s ease-in;
 
 	  	img {
 	  		position: absolute;
 	  		top: 0;
 	  		left: 0;
 	  		width: 100%;
+	  		mix-blend-mode: multiply;
 	  	}
 
 	  	&:hover {
-
-	  		 img {
-	  			mix-blend-mode: multiply;
-	  		}
-
+	  		background: $blue;
 	  	}
 
 	  }
@@ -41,16 +39,12 @@ main {
 	  	font-size: 30px;
 	  	line-height: 36px;
 	  	text-transform: uppercase;
+	  	color: $blue;
 	  	position: absolute;
 	  	margin-top: -15px;
 	  	margin-left: 10px;
 
 	  	@include underline(5, $pink, $gray);
-
-	  	a {
-	  		text-decoration: none;
-	  		color: $blue;
-	  	}
 
 	  }
 

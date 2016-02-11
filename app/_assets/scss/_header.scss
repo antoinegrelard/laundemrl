@@ -33,7 +33,7 @@ header {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		-webkit-font-smoothing: antialiased;
-		opacity: .5;
+		color: fade-out($white, .5);
 	}
 
 }
@@ -77,7 +77,7 @@ header {
 				width: 10px;
 				height: 2px;
 				background: white;
-				transition: width .3s ease-in-out;
+				transition: width .3s cubic-bezier(0,.9,.75,1);
 			}
 
 		}
@@ -105,14 +105,13 @@ header {
 	list-style: none;
 
 	a {
-		color: white;
+		color: fade-out($white, .5);
 		text-decoration: none;
-		opacity: .5;
 		font-size: $font-m;
-		transition: opacity .1s ease-in-out;
+		transition: color .1s ease-in-out;
 
 		&:hover {
-			opacity: 1;
+			color: $white;
 		}
 
 	}
