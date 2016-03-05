@@ -7,3 +7,24 @@
 @import '_base';
 @import '_header';
 @import '_content';
+
+@media (min-width: $breakpoint-xs) {
+	@import 'mediaqueries/640/_content';
+}
+
+@media (min-width: $breakpoint-s) {
+	@import 'mediaqueries/1024/_header';
+	@import 'mediaqueries/1024/_content';
+}
+
+@media (min-width: $breakpoint-m) {
+	@import 'mediaqueries/1280/_content';
+}
+
+@media (min-width: $breakpoint-l) {
+	
+}
+
+@media (min-width: $breakpoint-xl) {
+	
+}

@@ -1,17 +1,17 @@
 header {
 	position: fixed;
 	height: 100vh;
-	width: 33.33%;
-	max-width: 300px;
+	width: percentage(80px / 640px);
+	max-width: 80px;
 	background: $blue;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	color: white;
-	padding: 50px $gutter;
 }
 
 .header_title {
+	display: none;
 
 	h1 {
 		font-family: $font-playfair;
@@ -39,6 +39,7 @@ header {
 }
 
 .header_nav {
+	display: none;
 	flex-grow: 1;
 	font-family: $font-source-bold;
 	font-size: $font-xs;
@@ -93,6 +94,10 @@ header {
 
 	}
 
+}
+
+.header_social {
+	display: none;
 }
 
 .social_list {
