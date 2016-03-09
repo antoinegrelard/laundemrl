@@ -47,6 +47,8 @@ module.exports = {
     src:  srcAssets + '/scss/main.scss',
     dest: developmentAssets + '/css',
     options: {
+      sourcemap: true,
+      style: 'expanded',
       noCache: true,
       bundleExec: true
     }

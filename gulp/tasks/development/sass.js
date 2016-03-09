@@ -27,7 +27,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(postcss([ autoprefixer(config.autoprefixer) ]))
     .pipe(filter) // Don’t write sourcemaps of sourcemaps
-    .pipe(sourcemaps.write('.', { includeContent: false }))
+    .pipe(sourcemaps.write())
     .pipe(filter.restore) // Restore original files
     .pipe(gulp.dest(config.sass.dest));
 });

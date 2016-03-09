@@ -9,10 +9,10 @@ gulp.task('build', function(callback) {
   [
     'jekyll',
     'sass',
-    'fonts',
-    'images',
-    'scripts:libraries',
-    'scripts'
+    'fonts'
   ],
+  'images',
+  'scripts:libraries',
+  'scripts',
   callback);
 });
