@@ -7,6 +7,7 @@
 @import '_base';
 @import '_header';
 @import '_content';
+@import '_project';
 
 @media (min-width: $breakpoint-xs) {
 	@import 'mediaqueries/640/_content';
@@ -22,9 +23,10 @@
 }
 
 @media (min-width: $breakpoint-l) {
-	
+	@import 'mediaqueries/1600/_header';
+	@import 'mediaqueries/1600/_content';
 }
 
 @media (min-width: $breakpoint-xl) {
-	
+	@import 'mediaqueries/1920/_content';	
 }

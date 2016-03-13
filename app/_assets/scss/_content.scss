@@ -1,9 +1,13 @@
 main {
 	margin-left: percentage(80px/640px);
+
+	.wrapper {
+		padding: $gutter-s;
+	}
+
 }
 
 .projects_list {
-	padding: $gutter;
 	display: flex;
 	flex-direction: column;
 

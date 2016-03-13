@@ -1,7 +1,9 @@
 ---
+layout: page
 title: Test <br/> test
+type: projets
 image: http://lab.laundemorel.fr/images/dmdm_2x.gif
 permalink: /test/
 ---
 
-Amazing web project
+<h1 class="project_title">{{page.title}}</h1>

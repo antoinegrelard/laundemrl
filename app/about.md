@@ -1,5 +1,6 @@
 ---
-layout: page
+type: infos
+layout: default
 permalink: /about/
 ---
 

@@ -2,18 +2,18 @@
 
   <div class="header_title">
     <h1>
-      <a href="{{ site.url }}/">{{ site.title }}</a>
+      <a href="{{ site.baseurl }}">{{ site.title }}</a>
     </h1>
     <h2>{{site.subtitle}}</h2>
   </div>
 
   <nav class="header_nav">
     <ul class="nav_list">
-      <li class="nav_item active">
-        <a href="#">Projets</a>
+      <li class="nav_item {% if page.type == 'projets' %} active {% endif %}">
+        <a href="{{ site.baseurl }}">Projets</a>
       </li>
-      <li class="nav_item">
-        <a href="#">Infos</a>
+      <li class="nav_item {% if page.type == 'infos' %} active {% endif %}">
+        <a href="{{ 'about' | prepend: site.baseurl }}">Infos</a>
       </li>
       <li class="nav_item">
         <a href="mailto:{{site.email}}">Contact</a>

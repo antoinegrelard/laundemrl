@@ -1,5 +1,8 @@
+main .wrapper {
+	padding: 50px $gutter;
+}
+
 .projects_list {
-	padding: 50px $gutter-m;
 
 	.projects_item {
 		width: 50%;
@@ -8,13 +11,13 @@
 
 	.projects_item:nth-child(even) {
 	  position: relative;
-	  margin-top: -2.5 * $gutter-m;
-	  margin-bottom: $gutter-m;
+	  margin-top: -2.5 * $gutter;
+	  margin-bottom: $gutter;
 	}
 
 	.projects_item:nth-child(4n+3),
 	.projects_item:nth-child(4n+2){
-	  width: calc(50% - #{$gutter-m});
+	  width: calc(50% - #{$gutter});
 	}
 
 }
