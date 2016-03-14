@@ -1,0 +1,8 @@
+<div class="know-more_list">
+	{% for item in include.more %}
+		<div class="know-more_item">
+			<p>{{item.title}}</p>
+			<p>{{item.content}}</p>
+		</div>
+	{% endfor %}
+</div>
