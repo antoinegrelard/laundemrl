@@ -1,0 +1,14 @@
+.information_title {
+	font-family: $font-source-bold;
+	font-size: $font-xxs;
+	color: $blue;
+	letter-spacing: 1px;
+	margin-bottom: $gutter-s;
+}
+
+.information_content {
+	font-family: $font-playfair;
+	font-size: $font-s;
+	line-height: $font-s * 1.5;
+	color: $blue;
+}

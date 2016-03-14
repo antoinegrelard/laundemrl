@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Test <br/> test
+title: Dis moi <br/> Dix mots
 type: projets
 image: http://lab.laundemorel.fr/images/dmdm_2x.gif
 permalink: /test/
@@ -12,7 +12,7 @@ text-block_1:
 
 video-block:
   videoID: 148872823
-  title: Champagné
+  title: "Champagné :"
   desc: "n. m. Employé au Congo.<br/>Personne d’influence, aux nombreuses relations."
 
 text-block_2:
@@ -33,6 +33,10 @@ text-more:
     title: Fonctionnement
     content: "Le but est de créer un genre de miroir interactif mis en place uniquement lors des portes ouvertes 2016. Il permettrait aux visiteurs de se divertir et d'être acteurs au sein de ce projet."
 
+pagination:
+  - previous: "tac"
+  - next: "tic"
+
 ---
 
 {% include text-block.html title=page.text-block_1.title content=page.text-block_1.content %}
@@ -43,4 +47,6 @@ text-more:
 
 {% include gallery.html gallery=page.gallery %}
 
-{% include know-more.html more=page.text-more %}
+{% include pagination.html pagination=page.pagination %}
+
+<!-- {% include know-more.html more=page.text-more %} -->

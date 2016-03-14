@@ -27,4 +27,57 @@
 
 	}
 
+	.project_information {
+		margin: ($gutter-m / 2) 0;
+
+		@include underline(10, $pink, $gray) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+	.project_video {
+		margin: ($gutter-m / 2) 0;
+		padding-bottom: $gutter-m / 2;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 90%;
+			height: 1px;
+			background-color: $blue;
+			position: absolute;
+			left: 5%;
+			bottom: 0;
+		}
+
+	}
+
+	.project_gallery {
+		margin: ($gutter-m / 2) 0;
+	}
+
+	.project_pagination {
+		margin: ($gutter-m / 2) 0;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+	}
+
+	.project_information,
+	.project_video,
+	.project_gallery,
+	.project_pagination {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 }

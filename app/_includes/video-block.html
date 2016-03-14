@@ -1,3 +1,9 @@
-<iframe src="https://player.vimeo.com/video/{{include.videoID}}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p>{{include.title}}</p>
-<p>{{include.desc}}</p>
+<div class="project_video">
+	<div class="video_container">
+		<iframe src="https://player.vimeo.com/video/{{include.videoID}}?color=264dff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+	<div class="video_information">
+		<h3 class="video_title">{{include.title}}</h3>
+		<p class="video_description">{{include.desc}}</p>
+	</div>
+</div>
