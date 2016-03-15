@@ -9,6 +9,7 @@
 .information_content {
 	font-family: $font-playfair;
 	font-size: $font-s;
-	line-height: $font-s * 1.5;
+	line-height: 1.5;
 	color: $blue;
+	-webkit-font-smoothing: antialiased;
 }

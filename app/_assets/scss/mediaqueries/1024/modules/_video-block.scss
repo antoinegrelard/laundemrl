@@ -1,0 +1,9 @@
+.video_container {
+	width: 60%;
+	padding-top: percentage( (281/100 * 60)/500 );
+}
+
+.video_information {
+	margin-top: 0;
+	width: calc( 40% - #{$gutter-s} );
+}

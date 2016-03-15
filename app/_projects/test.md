@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dis moi <br/> Dix mots
+title: Dis-moi <br/> Dix mots
 type: projets
 image: http://lab.laundemorel.fr/images/dmdm_2x.gif
 permalink: /test/
@@ -47,6 +47,6 @@ pagination:
 
 {% include gallery.html gallery=page.gallery %}
 
-{% include pagination.html pagination=page.pagination %}
-
 <!-- {% include know-more.html more=page.text-more %} -->
+
+{% include pagination.html pagination=page.pagination %}

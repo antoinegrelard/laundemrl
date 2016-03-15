@@ -4,6 +4,7 @@
 	.project_title {
 		font-family: $font-source-black;
 		font-size: $font-m;
+		letter-spacing: 2px;
 		color: $blue;
 		display: inline-block;
 		text-align: center;
@@ -28,7 +29,6 @@
 	}
 
 	.project_information {
-		margin: ($gutter-m / 2) 0;
 
 		@include underline(10, $pink, $gray) {
 			margin-left: auto;
@@ -38,7 +38,8 @@
 	}
 
 	.project_video {
-		margin: ($gutter-m / 2) 0;
+		display: flex;
+		flex-direction: column;
 		padding-bottom: $gutter-m / 2;
 		position: relative;
 
@@ -55,12 +56,23 @@
 
 	}
 
-	.project_gallery {
-		margin: ($gutter-m / 2) 0;
+	.project_know-more {
+		position: relative;
+		padding-bottom: $gutter-m / 2;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 90%;
+			height: 1px;
+			background-color: $blue;
+			position: absolute;
+			left: 5%;
+			bottom: 0;
+		}
 	}
 
 	.project_pagination {
-		margin: ($gutter-m / 2) 0;
 
 		&::before,
 		&::after {
@@ -74,7 +86,10 @@
 	.project_information,
 	.project_video,
 	.project_gallery,
+	.project_know-more,
 	.project_pagination {
+		margin: ($gutter-m / 2) 0;
+		
 		&:last-child {
 			margin-bottom: 0;
 		}

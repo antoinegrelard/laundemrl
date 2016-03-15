@@ -1,0 +1,22 @@
+.information_wrapper {
+	text-align: left;
+	color: $blue;
+	letter-spacing: 1px;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		font-family: $font-playfair;
+		font-size: $font-xs;
+		font-weight: initial;
+		margin-bottom: 10px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	p {
+		font-family: $font-source-regular;
+		font-size: $font-xxs;
+	}
+}

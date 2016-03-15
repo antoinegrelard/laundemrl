@@ -1,0 +1,8 @@
+.know-more_item {
+	width: calc( 50% - #{$gutter / 3} );
+
+	&:not(:last-child) {
+		margin: 0;
+	}
+
+}

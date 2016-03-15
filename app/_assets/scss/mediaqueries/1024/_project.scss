@@ -1,0 +1,39 @@
+.project_page {
+
+	.project_title {
+		font-size: $font-l;
+	}
+
+	.project_information {
+		@include underline(20, $pink, $gray);
+	}
+
+	.project_video {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-bottom: $gutter-m;
+	}
+
+	.project_gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.project_know-more {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-bottom: $gutter-m;
+	}
+
+	.project_information,
+	.project_video,
+	.project_gallery,
+	.project_know-more,
+	.project_pagination {
+		margin: $gutter-m 0;
+	}
+
+}
