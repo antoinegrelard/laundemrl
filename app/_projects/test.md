@@ -14,6 +14,8 @@ video-block:
   videoID: 148872823
   title: "Champagné :"
   desc: "n. m. Employé au Congo.<br/>Personne d’influence, aux nombreuses relations."
+  alignTop: false
+  reverseOrder: false
 
 text-block_2:
   title: "Réalisation"
@@ -49,7 +51,7 @@ pagination:
 
 {% include text-block.html title=page.text-block_1.title content=page.text-block_1.content %}
 
-{% include video-block.html videoID=page.video-block.videoID title=page.video-block.title desc=page.video-block.desc %}
+{% include video-block.html videoID=page.video-block.videoID title=page.video-block.title desc=page.video-block.desc alignTop=page.video-block.alignTop reverseOrder=page.video-block.reverseOrder %}
 
 {% include text-block.html title=page.text-block_2.title content=page.text-block_2.content %}
 

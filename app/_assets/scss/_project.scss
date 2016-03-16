@@ -40,22 +40,9 @@
 	.project_video {
 		display: flex;
 		flex-direction: column;
-		padding-bottom: $gutter-m / 2;
-		position: relative;
-
-		&::after {
-			content: '';
-			display: block;
-			width: 90%;
-			height: 1px;
-			background-color: $blue;
-			position: absolute;
-			left: 5%;
-			bottom: 0;
-		}
-
 	}
 
+	.project_video,
 	.project_know-more {
 		position: relative;
 		padding-bottom: $gutter-m / 2;
@@ -70,6 +57,16 @@
 			left: 5%;
 			bottom: 0;
 		}
+
+		&:nth-last-child(2) {
+			padding-bottom: 0;
+
+			&::after {
+				display: none;
+			}
+
+		}
+
 	}
 
 	.project_pagination {
@@ -93,6 +90,7 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
 	}
 
 }

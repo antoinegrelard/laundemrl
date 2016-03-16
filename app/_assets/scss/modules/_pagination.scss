@@ -5,6 +5,7 @@
 	display: inline-block;
 	float: left;
 	position: relative;
+	color: $blue;
 
 	&::after {
 		content: '';

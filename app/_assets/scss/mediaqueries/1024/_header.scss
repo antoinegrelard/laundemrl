@@ -1,13 +1,6 @@
 header {
-	position: fixed;
-	height: 100vh;
 	width: 33.33%;
 	max-width: 300px;
-	background: $blue;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	color: white;
 	padding: 50px $gutter-s;
 }
 

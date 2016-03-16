@@ -12,7 +12,11 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-end;
-		padding-bottom: $gutter-m;
+
+		&.top {
+			align-items: flex-start;
+		}
+
 	}
 
 	.project_gallery {
@@ -25,7 +29,17 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+	}
+
+	.project_video,
+	.project_know-more {
 		padding-bottom: $gutter-m;
+
+		&::after {
+			width: 65%;
+			left: 17.5%;
+		}
+
 	}
 
 	.project_information,

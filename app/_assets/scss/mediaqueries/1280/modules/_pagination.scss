@@ -1,0 +1,9 @@
+.pagination_link {
+	transform-origin: center;
+	transform: rotate(-90deg);
+
+	&.pagination_next {
+		transform: rotate(90deg);
+	}
+
+}

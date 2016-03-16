@@ -1,9 +1,19 @@
 .video_container {
 	width: 60%;
-	padding-top: percentage( (281/100 * 60)/500 );
+	padding-top: percentage( (9/100 * 60)/16 );
+
+	.reversed & {
+		order: 2;
+	}
+
 }
 
 .video_information {
 	margin-top: 0;
 	width: calc( 40% - #{$gutter-s} );
+
+	.reversed & {
+		order: 1;
+	}
+
 }

@@ -36,13 +36,22 @@
 
 @media (min-width: $breakpoint-m) {
 	@import 'mediaqueries/1280/_content';
+	@import 'mediaqueries/1280/_project';
+
+	@import 'mediaqueries/1280/modules/_video-block';
+	@import 'mediaqueries/1280/modules/_pagination';
 }
 
 @media (min-width: $breakpoint-l) {
 	@import 'mediaqueries/1600/_header';
 	@import 'mediaqueries/1600/_content';
+	@import 'mediaqueries/1600/_project';
+
+	@import 'mediaqueries/1600/modules/_video-block';
+	@import 'mediaqueries/1600/modules/_text-block';
 }
 
 @media (min-width: $breakpoint-xl) {
 	@import 'mediaqueries/1920/_content';	
+	@import 'mediaqueries/1920/_project';	
 }
