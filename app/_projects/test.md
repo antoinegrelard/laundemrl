@@ -20,10 +20,18 @@ text-block_2:
   content: "Motion design mettant en mouvement des éléments vectoriels et typographiques, réalisé sur After Effects."
 
 gallery:
-  - http://lab.laundemorel.fr/images/dmdm_2x.gif
-  - http://lab.laundemorel.fr/images/dmdm_2x.gif
-  - http://lab.laundemorel.fr/images/dmdm_2x.gif
-  - http://lab.laundemorel.fr/images/dmdm_2x.gif
+  - 
+    type: img
+    src: http://lab.laundemorel.fr/images/dmdm_2x.gif
+  - 
+    type: video
+    src: 148872823
+  - 
+    type: img
+    src: http://lab.laundemorel.fr/images/dmdm_2x.gif
+  - 
+    type: img
+    src: http://lab.laundemorel.fr/images/dmdm_2x.gif
 
 text-more:
   -
