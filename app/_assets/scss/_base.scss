@@ -32,3 +32,19 @@ body {
 ul {
 	list-style: none
 }
+
+.button {
+	background: white;
+	border: 1px solid $blue;
+	font-family: $font-source-bold;
+	font-size: $font-xs;
+	color: $blue;
+	padding: 20px 25px;
+	-webkit-font-smoothing: antialiased;
+
+	&--reversed {
+		background: $blue;
+		color: $white;
+	}
+
+}

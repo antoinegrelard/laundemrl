@@ -10,6 +10,7 @@
 @import '_header';
 @import '_content';
 @import '_project';
+@import '_about';
 
 // Modules
 @import 'modules/_information';
@@ -26,6 +27,7 @@
 	@import 'mediaqueries/1024/_header';
 	@import 'mediaqueries/1024/_content';
 	@import 'mediaqueries/1024/_project';
+	@import 'mediaqueries/1024/_about';
 
 	@import 'mediaqueries/1024/modules/_information';
 	@import 'mediaqueries/1024/modules/_text-block';
@@ -37,6 +39,7 @@
 @media (min-width: $breakpoint-m) {
 	@import 'mediaqueries/1280/_content';
 	@import 'mediaqueries/1280/_project';
+	@import 'mediaqueries/1280/_about';
 
 	@import 'mediaqueries/1280/modules/_video-block';
 	@import 'mediaqueries/1280/modules/_pagination';

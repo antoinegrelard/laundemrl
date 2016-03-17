@@ -1,0 +1,24 @@
+.about_layout {
+	background: url(../imgs/pattern.jpg) repeat;
+}
+
+.about_page {
+	padding: $gutter;
+	background: $white;
+
+	.about_links .button {
+		width: 33.33%;
+		max-width: 230px;
+	}
+
+	.about_cv .cv_item {
+		width: 33.33%;
+		max-width: 230px;
+
+		&:not(:last-child) {
+			margin-right: $gutter-m;
+		}
+
+	}
+
+}
