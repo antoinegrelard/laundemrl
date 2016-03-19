@@ -1,7 +1,12 @@
+.menu {
+	display: none;
+}
+
 header {
+	position: fixed;
 	width: 33.33%;
 	max-width: 300px;
-	padding: 50px $gutter-s;
+	right: initial;
 }
 
 .header_title,

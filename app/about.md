@@ -1,6 +1,6 @@
 ---
 type: infos
-layout: about
+layout: default
 permalink: /about/
 ---
 

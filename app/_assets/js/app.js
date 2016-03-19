@@ -1,1 +1,5 @@
-import * as nav from './components/nav'
+import Nav from './components/nav';
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Nav();
+});

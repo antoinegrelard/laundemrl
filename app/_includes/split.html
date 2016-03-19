@@ -1,0 +1,4 @@
+{% assign text = include.text | split:'' %}
+{% for letter in text %}
+	<span>{{letter}}</span>
+{% endfor %}

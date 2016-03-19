@@ -3,9 +3,13 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if page.type == 'infos' %}class="about_layout"{% endif %}>
 
     {% include header.html %}
+
+    <button type='button' class=" menu_button menu">
+      {% include split.html text='menu' %}
+    </button>
 
     <main>
       <div class="wrapper">
