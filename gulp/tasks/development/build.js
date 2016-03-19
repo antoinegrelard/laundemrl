@@ -12,7 +12,6 @@ gulp.task('build', function(callback) {
     'fonts'
   ],
   'images',
-  'scripts:libraries',
   'scripts',
   callback);
 });

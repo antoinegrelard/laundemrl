@@ -10,7 +10,6 @@ gulp.task('build:production', function(callback) {
     'sass',
     'fonts',
     'images',
-    'scripts:libraries',
     'scripts'
   ],
   [

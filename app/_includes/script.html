@@ -1,11 +1,1 @@
-{% if site.env == 'dev' %}
-	<!-- SCRIPTS FROM LIBRARIES -->
-	<script type="text/javascript" src="{{"/assets/js/libs/jquery.js" | prepend: site.url}}"></script>
-	<script type="text/javascript" src="{{"/assets/js/libs/jquery.history.js" | prepend: site.url}}"></script>
-
-	<!-- SCRIPTS FROM APP -->
-	<script type="text/javascript" src="{{"/assets/js/main.js" | prepend: site.url}}"></script>
-{% else %}
-	<!-- MINIFIED SCRIPTS -->
-	<script type="text/javascript" src="{{"/assets/js/scripts.min.js" | prepend: site.url}}"></script>
-{% endif %}
+<script type="text/javascript" src="{{"/assets/js/app.js" | prepend: site.url}}"></script>

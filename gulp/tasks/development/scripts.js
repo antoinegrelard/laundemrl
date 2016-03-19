@@ -1,19 +1,29 @@
-var gulp     = require('gulp');
-var changed  = require('gulp-changed');
-var config   = require('../../config').scripts;
+var gulp       = require('gulp');
+var plumber    = require('gulp-plumber');
+var babel	   = require('gulp-babel');
+var browserify = require('browserify');
+var source 	   = require('vinyl-source-stream');
+var buffer 	   = require('vinyl-buffer');
+var config     = require('../../config').scripts;
 
 /**
- * Copy scripts from
- * bower components, local libraries and app scripts
+ * Render es6 files into readable files and copy to destination
  */
- gulp.task('scripts', function() {
-   return gulp.src(config.app.src)
-     .pipe(changed(config.app.dest)) // Ignore unchanged files
-     .pipe(gulp.dest(config.app.dest));
- });
+gulp.task('babel', function() {
+return gulp.src(config.src)
+	.pipe(plumber())
+	.pipe(babel())
+	.pipe(gulp.dest('temp'));
+});
 
- gulp.task('scripts:libraries', function() {
-   return gulp.src(config.libraries.src)
-     .pipe(changed(config.libraries.dest)) // Ignore unchanged files
-     .pipe(gulp.dest(config.libraries.dest));
- });
+gulp.task('scripts', ['babel'], function() {
+	var b = browserify({
+		entries: 'temp/app.js',
+		debug: true
+	});
+
+	return b.bundle()
+		.pipe(source('app.js'))
+		.pipe(buffer())
+		.pipe(gulp.dest(config.dest));
+});

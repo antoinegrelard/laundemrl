@@ -7,4 +7,5 @@ var config = require('../../config').delete;
  */
 gulp.task('delete', function() {
   del(config.src);
+  del(config.temp);
 });

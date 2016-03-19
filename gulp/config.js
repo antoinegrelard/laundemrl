@@ -29,7 +29,8 @@ module.exports = {
       }
   },
   delete: {
-    src: [developmentAssets]
+    src: [developmentAssets],
+    temp: 'temp'
   },
   jekyll: {
     development: {
@@ -54,18 +55,9 @@ module.exports = {
     }
   },
   scripts: {
-    libraries: {
-      src: [
-      ],
-      dest: developmentAssets + '/js/libs'
-    },
-    app: {
-      src: [
-        srcAssets + '/js/main.js'
-      ],
-      dest: developmentAssets + '/js'
-    }
-
+    src: srcAssets + '/js/**/*.js',
+    temp: 'temp/**/*.js',
+    dest: developmentAssets + '/js'
   },
   autoprefixer: {
     browsers: [
