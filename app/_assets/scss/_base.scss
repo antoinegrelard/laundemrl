@@ -29,6 +29,12 @@ body {
   background: url(../imgs/pattern.jpg) repeat;
 }
 
+.menu-opened {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+}
+
 ul {
 	list-style: none
 }

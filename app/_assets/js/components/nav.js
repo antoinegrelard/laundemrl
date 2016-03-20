@@ -24,10 +24,14 @@ export default class Nav {
 
   open() {
     this.header.classList.add('opened');
+    document.body.classList.add('menu-opened');
+    document.querySelector('html').classList.add('menu-opened');
   }
 
   close() {
     this.header.classList.remove('opened');
+    document.body.classList.remove('menu-opened');
+    document.querySelector('html').classList.remove('menu-opened');
   }
 
 }
