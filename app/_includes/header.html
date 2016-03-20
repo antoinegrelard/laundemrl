@@ -2,7 +2,7 @@
 
   <div class="header_title">
     <h1>
-      <a href="/">{{ site.title }}</a>
+      <a href="{{ "/" | prepend: site.url }}">{{ site.title }}</a>
     </h1>
     <h2>{{site.subtitle}}</h2>
   </div>
@@ -10,10 +10,10 @@
   <nav class="header_nav">
     <ul class="nav_list">
       <li class="nav_item {% if page.type == 'projets' %} active {% endif %}">
-        <a href="/">Projets</a>
+        <a href="{{ "/" | prepend: site.url }}">Projets</a>
       </li>
       <li class="nav_item {% if page.type == 'infos' %} active {% endif %}">
-        <a href="/about">Infos</a>
+        <a href="{{ "/about" | prepend: site.url }}">Infos</a>
       </li>
       <li class="nav_item">
         <a href="mailto:{{site.email}}">Contact</a>

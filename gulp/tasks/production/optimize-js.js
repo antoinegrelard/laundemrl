@@ -10,7 +10,7 @@ var config = require('../../config').optimize.js;
 gulp.task('optimize:js', function() {
   return gulp.src(config.src)
     .pipe(uglify(config.options))
-    .pipe(concat('scripts.min.js'))
+    .pipe(concat('app.js'))
     .pipe(gulp.dest(config.dest))
     .pipe(size());
 });

@@ -29,7 +29,7 @@ module.exports = {
       }
   },
   delete: {
-    src: [developmentAssets],
+    src: [build],
     temp: 'temp'
   },
   jekyll: {
@@ -57,7 +57,8 @@ module.exports = {
   scripts: {
     src: srcAssets + '/js/**/*.js',
     temp: 'temp/**/*.js',
-    dest: developmentAssets + '/js'
+    dest: developmentAssets + '/js',
+    prod: productionAssets + '/js'
   },
   autoprefixer: {
     browsers: [
@@ -73,11 +74,13 @@ module.exports = {
   },
   images: {
     src:  srcAssets + '/imgs/**/*',
-    dest: developmentAssets + '/imgs'
+    dest: developmentAssets + '/imgs',
+    prod: productionAssets + '/imgs'
   },
   fonts: {
     src:  srcAssets + '/fonts/*',
-    dest: developmentAssets + '/fonts'
+    dest: developmentAssets + '/fonts',
+    prod: productionAssets + '/fonts'
   },
   watch: {
     jekyll: [
@@ -113,11 +116,7 @@ module.exports = {
       }
     },
     js: {
-        src: [
-          jsLibAssets + '/jquery/dist/jquery.js',
-          jsLibAssets + '/history.js/scripts/bundled-uncompressed/html4+html5/jquery.history.js',
-          srcAssets + '/js/main.js'
-        ],
+        src: productionAssets + '/js/app.js',
         dest: productionAssets + '/js/',
         options: {}
     },

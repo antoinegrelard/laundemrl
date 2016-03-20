@@ -57,6 +57,6 @@ pagination:
 
 {% include gallery.html gallery=page.gallery %}
 
-{% include know-more.html more=page.text-more %}
+<!-- {% include know-more.html more=page.text-more %} -->
 
 {% include pagination.html pagination=page.pagination %}
