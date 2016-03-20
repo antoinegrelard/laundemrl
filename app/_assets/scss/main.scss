@@ -19,6 +19,10 @@
 @import 'modules/_gallery';
 @import 'modules/_pagination';
 
+@media (orientation: landscape) and (max-width: $breakpoint-s) {
+	@import 'mediaqueries/landscape/_header';
+}
+
 @media (min-width: $breakpoint-xs) {
 	@import 'mediaqueries/640/_content';
 	@import 'mediaqueries/640/_project';

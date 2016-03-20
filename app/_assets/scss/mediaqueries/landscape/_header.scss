@@ -1,0 +1,52 @@
+header {
+	padding: $gutter-s;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 100vh;
+
+	.header_title,
+	.header_nav,
+	.header_social,
+	.close {
+		width: 50%;
+	}
+
+	.header_nav {
+		padding-top: 0;
+		flex-grow: initial;
+
+		.nav_list {
+			align-items: flex-end;
+		}
+
+		.nav_item a {
+			padding-left: 0;
+			padding-right: 20px;
+
+			&::before {
+				left: initial;
+				right: 0;
+			}
+
+		}
+
+	}
+
+	.header_social {
+		align-self: flex-end;
+	}
+
+	.close {
+		position: initial;
+		max-width: initial;
+		height: initial;
+		align-self: flex-end;
+		text-align: right;
+
+		span {
+			display: inline-block;
+		}
+
+	}
+
+}
