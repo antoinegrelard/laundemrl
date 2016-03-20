@@ -18,10 +18,11 @@
 
 .close {
 	position: absolute;
-	padding: $gutter-s ($gutter / 3);
-	top: 50%;
+	top: 0;
 	right: 0;
-	transform: translateY(-50%);
+	width: 12.5%;
+	max-width: $gutter;
+	height: 100%;
 	z-index: 3;
 }
 
