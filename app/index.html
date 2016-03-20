@@ -6,7 +6,7 @@ layout: default
 <ul class="projects_list">
 {% for project in site.projects %}
   <li class="projects_item">
-    <a href="{{ project.url | prepend: site.url }}">
+    <a href="{{project.permalink}}">
       <div class="background">
         <img src="{{ project.image }}">
       </div>

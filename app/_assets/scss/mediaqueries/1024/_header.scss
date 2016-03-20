@@ -7,10 +7,20 @@ header {
 	width: 33.33%;
 	max-width: 300px;
 	right: initial;
-}
 
-.header_title,
-.header_nav,
-.header_social {
-	display: block;
+	.header_title,
+	.header_nav,
+	.header_social {
+		display: block;
+		opacity: 1;
+	}
+
+	.close {
+		display: none;
+	}
+
+	.header_nav {
+		padding-top: 100px;
+	}
+
 }
