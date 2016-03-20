@@ -1,15 +1,4 @@
 .gallery_item {
 	width: calc( 50% - #{$gutter-m / 2} );
 	margin-bottom: $gutter-m;
-
-	&:last-child,
-	&:nth-last-child(2) {
-		margin-bottom: 0;
-	}
-
-	.video_container {
-		width: 100%;
-		padding-top: percentage( 9/16 );
-	}
-
 }

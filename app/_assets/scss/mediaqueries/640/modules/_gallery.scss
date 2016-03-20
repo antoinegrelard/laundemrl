@@ -1,0 +1,15 @@
+.gallery_item {
+	width: calc( 50% - #{$gutter-s / 2} );
+	margin-bottom: $gutter-s;
+
+	&:last-child,
+	&:nth-last-child(2) {
+		margin-bottom: 0;
+	}
+
+	.video_container {
+		width: 100%;
+		padding-top: percentage( 9/16 );
+	}
+
+}

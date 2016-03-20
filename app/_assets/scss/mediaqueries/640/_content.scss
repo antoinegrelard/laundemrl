@@ -1,3 +1,20 @@
 main {
 	margin-left: 80px;
 }
+
+.projects_list {
+
+	.projects_item {
+	  width: calc(100% - #{$gutter-m});
+	}
+
+	.projects_item:nth-child(even) {
+	  align-self: flex-end;
+	}
+
+	.projects_item:nth-child(4n+3),
+	.projects_item:nth-child(4n+2){
+	  width: calc(50% + #{$gutter-m/2});
+	}
+
+}

@@ -1,19 +1,6 @@
 .about_page {
 
-	.about_intro {
-
-		&::after {
-			margin-top: 20px;
-		}
-
-		p {
-			font-size: $font-m;
-		}
-
-	}
-
 	.about_links {
-		flex-direction: row;
 		margin-bottom: $gutter-m / 2;
 
 		.button {
@@ -22,54 +9,24 @@
 			text-align: center;
 
 			&:first-child {
-				margin-bottom: 0;
-				margin-right: $gutter-m;
+				margin-right: percentage( 80/564 );
 			}
 		}
 
 	}
 
 	.about_cv {
-		display: flex;
-		flex-wrap: wrap;
 
 		.cv_item {
-			width: 50%;
 			max-width: 240px;
 			margin-bottom: $gutter-m / 2;
-			color: $blue;
+
+			&:not(:last-child) {
+				margin-right: 0;
+			}
 
 			&:first-child {
-				margin-right: $gutter-m;
-			}
-
-			.item_title {
-				font-family: $font-source-bold;
-				font-size: $font-xs;
-				margin-bottom: $gutter-s;
-				-webkit-font-smoothing: antialiased;
-			}
-
-			.item_list {
-
-				dt {
-					font-family: $font-playfair;
-					font-size: $font-s;
-					margin-bottom: 10px;
-				}
-
-				dd {
-					font-family: $font-source-regular;
-					font-size: $font-xs;
-					line-height: 2;
-					-webkit-font-smoothing: antialiased;
-
-					&:not(:last-child) {
-						margin-bottom: $gutter-s;
-					}
-
-				}
-
+				margin-right: percentage( 80/564 );
 			}
 
 		}

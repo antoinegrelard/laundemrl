@@ -21,19 +21,34 @@
 
 @media (min-width: $breakpoint-xs) {
 	@import 'mediaqueries/640/_content';
+	@import 'mediaqueries/640/_project';
+	@import 'mediaqueries/640/_about';
+
+	@import 'mediaqueries/640/modules/_information';
+	@import 'mediaqueries/640/modules/_text-block';
+	@import 'mediaqueries/640/modules/_video-block';
+	@import 'mediaqueries/640/modules/_gallery';
+	@import 'mediaqueries/640/modules/_know-more';
+}
+
+// Mediaquery exception to fix specific layout issues on about page
+@media (min-width: 890px) {
+	@import 'mediaqueries/890/_about';
 }
 
 @media (min-width: $breakpoint-s) {
 	@import 'mediaqueries/1024/_header';
 	@import 'mediaqueries/1024/_content';
-	@import 'mediaqueries/1024/_project';
 	@import 'mediaqueries/1024/_about';
 
-	@import 'mediaqueries/1024/modules/_information';
 	@import 'mediaqueries/1024/modules/_text-block';
-	@import 'mediaqueries/1024/modules/_video-block';
 	@import 'mediaqueries/1024/modules/_gallery';
 	@import 'mediaqueries/1024/modules/_know-more';
+}
+
+// Mediaquery exception to fix specific layout issues on about page
+@media (min-width: 1260px) {
+	@import 'mediaqueries/1260/_about';
 }
 
 @media (min-width: $breakpoint-m) {
