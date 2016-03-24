@@ -29,9 +29,9 @@ body {
   background: url(../imgs/pattern.jpg) repeat;
 }
 
-.menu-opened {
+html,
+body {
 	position: relative;
-	overflow: hidden;
 	height: 100%;
 }
 

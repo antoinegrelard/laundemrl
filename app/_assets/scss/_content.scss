@@ -1,4 +1,7 @@
 main {
+	height: 100%;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	margin-left: percentage(80px/640px);
 
 	.wrapper {

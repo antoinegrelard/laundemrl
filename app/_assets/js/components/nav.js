@@ -11,8 +11,8 @@ export default class Nav {
       this.isMobile = mql.matches;
     });
 
-    window.addEventListener('resize', this.checkMobile.bind( this ), false);
-    this.checkMobile();
+    window.addEventListener('resize', this.handleResize.bind( this ), false);
+    this.handleResize();
   }
 
   createNav() {
@@ -31,17 +31,13 @@ export default class Nav {
 
   open() {
     this.header.classList.add('opened');
-    document.body.classList.add('menu-opened');
-    document.querySelector('html').classList.add('menu-opened');
   }
 
   close() {
     this.header.classList.remove('opened');
-    document.body.classList.remove('menu-opened');
-    document.querySelector('html').classList.remove('menu-opened');
   }
 
-  checkMobile() {
+  handleResize() {
     if( this.isMobile ) {
       this.createNav();
     } else {
