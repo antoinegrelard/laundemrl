@@ -1,8 +1,11 @@
 header {
 	padding: $gutter-s;
-	flex-direction: row;
-	flex-wrap: wrap;
 	height: 100vh;
+
+	.wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 
 	.header_title,
 	.header_nav,

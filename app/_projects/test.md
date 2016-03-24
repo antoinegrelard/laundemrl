@@ -44,8 +44,8 @@ text-more:
     content: "Le but est de créer un genre de miroir interactif mis en place uniquement lors des portes ouvertes 2016. Il permettrait aux visiteurs de se divertir et d'être acteurs au sein de ce projet."
 
 pagination:
-  - previous: "tac"
-  - next: "tic"
+  previous: tac
+  next: tic
 
 ---
 
