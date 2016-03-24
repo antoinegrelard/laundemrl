@@ -6,7 +6,7 @@ var vfb       = require('vinyl-ftp-branch' );
  * Copy files and folder to server
  * via ftp
  */
-gulp.task( 'ftp', function() {
+gulp.task( 'ftp', ['publish'],  function() {
   var options = vfb({
      host: 'ftp.antoinegrelard.fr',
      userKey: 'key1',

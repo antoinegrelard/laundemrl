@@ -19,14 +19,6 @@ npm install
 gulp
 ```
 
-# Bundle for production
-
-```
-
-gulp publish
-
-```
-
 # Deploy to ftp
 
 ```
