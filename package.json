@@ -30,6 +30,7 @@
     "run-sequence": "^1.1.4",
     "vinyl-buffer": "^1.0.0",
     "vinyl-ftp": "^0.4.5",
+    "vinyl-ftp-branch": "^0.2.1",
     "vinyl-source-stream": "^1.1.0"
   }
 }

@@ -6,3 +6,4 @@ app/_bower_components
 **/.DS_Store
 .DS_Store
 gulp/config-ftp.json
+.ftppass

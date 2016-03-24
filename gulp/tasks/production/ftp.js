@@ -1,35 +1,21 @@
 var gulp      = require('gulp');
 var ftp       = require('vinyl-ftp' );
-var prompt    = require('gulp-prompt');
+var vfb       = require('vinyl-ftp-branch' );
 
 /**
  * Copy files and folder to server
  * via ftp
  */
 gulp.task( 'ftp', function() {
+  var options = vfb({
+     host: 'ftp.antoinegrelard.fr',
+     userKey: 'key1',
+     parallel: 10
+    });
 
- // using base = '.' will transfer everything to /public_html correctly
- // turn off buffering in gulp.src for best performance
+ 	var conn = ftp.create(options);
 
- return gulp.src('/')
- 	 .pipe( prompt.prompt({
- 	 	type: 'password',
- 	 	name: 'pass',
- 	 	message: 'enter your password'
- 	 }, function(res){
-
- 	 	var conn = ftp.create(
- 	 		{
- 	 		 host:     'ftp.antoinegrelard.fr',
- 	 		 user:     'antoinegq',
- 	 		 password: res.pass,
- 	 		 parallel: 10
- 	 		}
- 	 	)
-
- 	 	gulp.src( "build/production/**", { base: 'build/production', buffer: false } )
+ 	return gulp.src( "build/production/**", { base: 'build/production', buffer: false } )
  	 	.pipe( conn.newer( '/www/test' ) ) // only upload newer files
  	 	.pipe( conn.dest( '/www/test' ) );
- 	 }))
-
-} );
+});
