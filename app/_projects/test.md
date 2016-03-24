@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Dis-moi <br/> Dix mots
+title: "Dis-moi <br/> Dix mots"
 type: projets
 image: http://lab.laundemorel.fr/images/dmdm_2x.gif
 permalink: /test/

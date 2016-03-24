@@ -1,7 +1,6 @@
 ---
 layout: project
-title: Le titre <br/> du projet
-type: projets
+title: "Le titre <br/> du projet"
 image: http://lab.laundemorel.fr/images/dmdm_2x.gif
 permalink: /styleguide/
 
