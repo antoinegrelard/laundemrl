@@ -47,10 +47,22 @@ ul {
 	color: $blue;
 	padding: 20px 25px;
 	-webkit-font-smoothing: antialiased;
+  transition: all 100ms ease-in-out;
+
+  &:hover {
+    background: $blue;
+    color: $white;
+  }
 
 	&--reversed {
 		background: $blue;
 		color: $white;
+
+    &:hover {
+      background: $white;
+      color: $blue;
+    }
+
 	}
 
 }
