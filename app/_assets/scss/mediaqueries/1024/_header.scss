@@ -5,8 +5,9 @@
 header {
 	position: fixed;
 	width: 33.33%;
-	max-width: 300px;
+	max-width: 260px;
 	right: initial;
+	padding: 50px $gutter-s;
 
 	.header_title,
 	.header_nav,
@@ -15,16 +16,32 @@ header {
 		opacity: 1;
 	}
 
+	.header_title {
+
+		h1 {
+			font-size: 32px;
+		}
+
+		h2 {
+			font-size: $font-xs;
+		}
+	}
+
 	.close {
 		display: none;
 	}
 
 	.header_nav {
 		padding-top: 100px;
+		font-size: $font-xs;
 	}
 
 	.social_list {
-		width: 80%;
+		width: 90%;
+	}
+
+	.social_item a {
+		font-size: 18px;
 	}
 
 }

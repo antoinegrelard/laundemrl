@@ -55,7 +55,7 @@ header {
 	width: 100vw;
 	top: 0;
 	right: 100%;
-	padding: 50px $gutter-s;
+	padding: $gutter-s;
 	background: $blue;
 	color: white;
 	z-index: 1;
@@ -107,7 +107,7 @@ header {
 
 	h1 {
 		font-family: $font-playfair;
-		font-size: $font-xl;
+		font-size: 38px;
 		font-weight: 300;
 
 		@include underline(25, $pink, $blue, true);
@@ -121,7 +121,7 @@ header {
 
 	h2 {
 		font-family: $font-source-bold;
-		font-size: $font-xs;
+		font-size: 18px;
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		-webkit-font-smoothing: antialiased;
@@ -133,7 +133,7 @@ header {
 .header_nav {
 	flex-grow: 1;
 	font-family: $font-source-bold;
-	font-size: $font-xs;
+	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 1px;
 	padding-top: $gutter;
@@ -190,7 +190,7 @@ header {
 .social_list {
 	display: flex;
 	justify-content: space-between;
-	width: 60%;
+	width: 80%;
 }
 
 .social_item {
@@ -199,7 +199,7 @@ header {
 	a {
 		color: fade-out($white, .5);
 		text-decoration: none;
-		font-size: $font-m;
+		font-size: 27px;
 		transition: color .1s ease-in-out;
 
 		&:hover {
